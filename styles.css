@@ -1,0 +1,227 @@
+@import url('~lucide-static/font/Lucide.css');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+  font-weight: 400;
+  max-width: 1240px;
+  margin: 0 auto;
+  background-color: white;
+
+  --border-radius: 12px;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 8px 12px rgba(0, 0, 0, 0.1);
+  --shadow-active: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  --ff-sans: 'Arial', sans-serif;
+  --ff-serif: 'Space Grotesk', serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  --fs-100: .25rem;
+  --fs-200: .75rem;
+  --fs-300: 1rem;
+  --fs-400: 1.25rem;
+  --fs-500: 1.5rem;
+  --fs-600: 2rem;
+  --fs-700: 2.5rem;
+  --fs-800: 3rem;
+  --fs-900: 3.5rem;
+
+  --hue-color: 0;
+  --grey-value: 0;
+
+  --primary-color-50: hsl(var(--hue-color), 40%, 92%);
+  --primary-color-100: hsl(var(--hue-color), 48%, 85%);
+  --primary-color-200: hsl(var(--hue-color), 54%, 78%);
+  --primary-color-300: hsl(var(--hue-color), 62%, 70%);
+  --primary-color-400: hsl(var(--hue-color), 70%, 64%);
+  --primary-color-500: hsl(var(--hue-color), 77%, 56%);
+  --primary-color-600: hsl(var(--hue-color), 80%, 46%);
+  --primary-color-700: hsl(var(--hue-color), 86%, 38%);
+  --primary-color-800: hsl(var(--hue-color), 92%, 30%);
+  --primary-color-900: hsl(var(--hue-color), 100%, 22%);
+  
+  --grey-scale-50: hsl(var(--grey-value), 0%, 96%);
+  --grey-scale-100: hsl(var(--grey-value), 0%, 72%);
+  --grey-scale-200: hsl(var(--grey-value), 0%, 64%);
+  --grey-scale-300: hsl(var(--grey-value), 0%, 56%);
+  --grey-scale-400: hsl(var(--grey-value), 0%, 48%);
+  --grey-scale-500: hsl(var(--grey-value), 0%, 40%);
+  --grey-scale-600: hsl(var(--grey-value), 0%, 32%);
+  --grey-scale-700: hsl(var(--grey-value), 0%, 24%);
+  --grey-scale-800: hsl(var(--grey-value), 0%, 16%);
+  --grey-scale-900: hsl(var(--grey-value), 0%, 8%);
+
+  --background-color: var(--grey-scale-50);
+  --color: var(--grey-scale-700);
+
+  --radius: 0.25rem;
+  --transition: all 0.3s linear;
+  --border: 1px solid var(--grey-scale-100);
+  font-family: var(--ff-serif);
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+h1 {
+  font-size: var(--fs-800);
+  font-weight: var(--fw-regular);
+}
+
+h2 {
+  font-size: var(--fs-700);
+  font-weight: var(--fw-regular);
+}
+
+h3 {
+  font-size: var(--fs-600);
+  font-weight: var(--fw-regular);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  max-width: 1240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 2.5rem;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+}
+
+.text-md {
+  font-size: var(--fs-500);
+}
+
+.divider {
+  width: 70%;
+  height: 1px;
+  margin: 1rem auto;
+  background-color: var(--primary-color-100);
+}
+
+.history-container {
+  padding-bottom: 2rem;
+}
+
+.history {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.storyline {
+  display: flex;
+  gap: 1rem;
+}
+
+.card{
+  border: var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+.hobbies-container {
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+  background-color: var(--primary-color-900);
+}
+
+.hobbies-container h3 {
+  color: #F5F5F5;
+}
+
+.hobbies {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card2 {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  border-style: solid;
+  border-width: thin;
+  border-color: #F5F5F5;
+  padding: 0.5rem 1rem;
+}
+
+.card2 p {
+  color: #F5F5F5;
+}
+
+.motivation {
+  display: flex;
+  gap: 1rem;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.card3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#red{
+  color: var(--primary-color-500);
+}
+
+#bold{
+  font-weight: var(--fw-bold);
+}
+
+@media screen and (max-width: 880px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .images {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .storyline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hobbies {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #arrowIcon {
+    width: 10%;
+    transform: rotate(90deg);
+  }
+}
